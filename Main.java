@@ -7,20 +7,7 @@ class Main {
 		int blc=100000;
 
 		if(ac>999999&&ac<9999999) {
-			for(int i=0; i<=5; i++) {
-			    if (i == 4) {
-					int penalty = blc / 2; 
-					blc -= penalty;
-					System.out.println("penalty Applied (50%) : " + penalty);
-					System.out.println("Balance After Penalty: " + blc);
-				}
-				if (i == 5) {
-					int penalty = blc / 4; 
-					blc -= penalty;
-					System.out.println("penalty Applied (25%) : " + penalty);
-					System.out.println("Balance After Penalty: " + blc);
-					break;
-				}
+
 				System.out.print("Acc Type\n1.Saving \n2.Current \nSelect Acc Type:");
 				int ent_acc_type=sc.nextInt();
 				switch(ent_acc_type) {
@@ -80,7 +67,7 @@ class Main {
 						System.out.println("Invalid Transction Type");
 					}
 				}
-			}
+			
 
 		} 
 		else {
